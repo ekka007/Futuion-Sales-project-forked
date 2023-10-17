@@ -32,6 +32,8 @@ jobs:
 
     - name: Build and push Docker image
       run: |
+        # Generate a unique tag based on the commit hash
+        TAG="$(echo $GITHUB_SHA | cut -c1-7)"
         docker build -t javabkpp .
         docker tag javabkpp:latest 359658559307.dkr.ecr.ap-south-1.amazonaws.com/javabkpp:latest
         docker push 359658559307.dkr.ecr.ap-south-1.amazonaws.com/javabkpp:latest
