@@ -22,3 +22,11 @@ jobs:
       run: |
         mvn compile  # Use the Maven compile command
       working-directory: ./futuionsales
+
+    - name: Test Java code
+      run: |
+        mvn test  # Use the Maven test command
+
+    - name: package Java code
+      run: |
+        mvn package  # Use the Maven packaging command 
