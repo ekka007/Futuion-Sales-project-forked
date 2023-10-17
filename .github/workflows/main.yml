@@ -18,8 +18,8 @@ jobs:
       with:
         java-version: 11
 
-    - name: Build Java code
+    - name: Compile Java code
       run: |
-        ./gradlew build  # Replace this with your build command
-      working-directory: ./futuionsales/
+        mvn compile  # Use the Maven compile command
+      working-directory: ./futuionsales
 
