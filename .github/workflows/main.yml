@@ -35,3 +35,4 @@ jobs:
         docker build -t javabkpp .
         docker tag javabkpp:latest 359658559307.dkr.ecr.ap-south-1.amazonaws.com/javabkpp:latest
         docker push 359658559307.dkr.ecr.ap-south-1.amazonaws.com/javabkpp:latest
+      working-directory: ./futuionsales
