@@ -20,9 +20,6 @@ jobs:
 
     - name: Compile Java code
       run: |
-        mvn validate  # Use the Maven compile command
+        mvn package  # Use the Maven compile command
       working-directory: ./futuionsales
-
-    - name: package Java code
-      run: |
-        mvn package  # Use the Maven packaging command 
+ 
